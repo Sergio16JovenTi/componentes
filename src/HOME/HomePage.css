@@ -1,0 +1,234 @@
+/* Estilos básicos para header sticky en HomePage */
+
+/* Nav sticky */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffffcc; /* ligero transparente para efecto */
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+nav a {
+  color: #111827;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+nav a:hover {
+  background: #f3f4f6;
+}
+
+/* Opcional: título */
+h1 {
+  margin: 0;
+  padding: 1rem;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #0f1115;
+  color: #e6e8eb;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #151922cc;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #242a33;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+nav a {
+  color: #e6e8eb;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+nav a:hover {
+  background: #1e2430;
+  color: #ffffff;
+}
+
+h1 {
+  margin: 0;
+  padding: 1rem;
+}
+/* Estilos básicos para header sticky */
+
+/* Reseteos mínimos */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Contenedor principal opcional */
+#Home, .homepage-container {
+  min-height: 100vh;
+  background: #f7f7f8;
+}
+
+/* Barra de navegación sticky */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Layout interno de la barra */
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 20px;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #1f2937; /* gris oscuro */
+  border-radius: 6px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+nav a:hover {
+  background-color: #f0f2f5;
+}
+
+/* Título de la página */
+h1 {
+  margin: 0;
+  padding: 24px 20px;
+  color: #111827;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Espaciado del contenido debajo del header */
+.page-content {
+  padding: 20px;
+}
+
+/* Layout interno del header para distribuir izquierda/derecha */
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 16px;
+}
+
+/* Contenedor del buscador a la derecha */
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* Input de búsqueda */
+.search-input {
+  height: 36px;
+  min-width: 220px;
+  padding: 0 12px;
+  border: 1px solid #e6e6e9;
+  border-radius: 8px;
+  background: #fff;
+  color: #1f2937;
+}
+
+.search-input::placeholder {
+  color: #6b7280;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Botón de búsqueda */
+.search-button {
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #1d4ed8;
+}
+
+/* Lista de resultados */
+.results {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.results li {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #e6e6e9;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+@media (max-width: 640px) {
+  .search-input {
+    min-width: 140px;
+    width: 100%;
+  }
+  .header-search {
+    flex: 1;
+  }
+}
