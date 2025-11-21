@@ -1,0 +1,27 @@
+.cm-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:2000;
+}
+
+.cm-panel {
+  background: #0f0f12;
+  color: #fff;
+  padding: 20px;
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.cm-title { margin: 0 0 8px; font-size: 1.1rem; }
+.cm-message { margin: 0 0 18px; color: #ddd; }
+
+.cm-actions { display:flex; gap:12px; justify-content:flex-end; }
+.cm-btn { padding: 8px 14px; border-radius:8px; border:none; cursor:pointer; font-weight:600; }
+.cm-btn-confirm { background:#28a745; color:white; }
+.cm-btn-cancel  { background:#d9534f; color:white; }
